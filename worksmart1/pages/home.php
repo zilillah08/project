@@ -142,8 +142,8 @@ ini_set('display_errors', 1);
                 <a href="#workshops" class="btn btn-primary me-0 me-sm-2 mx-1">Jelajahi Workshop</a>
                 
                 <!-- link vidio cara kerja <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox"> -->
-                  <i class="bi bi-play-circle me-1"></i>
-                  Lihat Cara Kerjanya
+                 <!-- <i class="bi bi-play-circle me-1"></i>
+                  Lihat Cara Kerjanya -->
                 </a>
               </div>
             </div>
@@ -241,10 +241,10 @@ ini_set('display_errors', 1);
               <div class="row gy-4">
                 <div class="col-lg-5">
                   <div class="profile d-flex align-items-center gap-3">
-                    <img src="landingpage/assets/img/avatar-1.webp" alt="Profil CEO" class="profile-image">
+                    <img src="landingpage/assets/img/anggota.jpg" alt="Profil CEO" class="profile-image">
                     <div>
                       <h4 class="profile-name">anggota wmk</h4>
-                      <p class="profile-position">Pendiri & Pelatih Utama</p>
+                      <p class="profile-position">Pendiri WorkSmart</p>
                     </div>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ ini_set('display_errors', 1);
                     <i class="bi bi-telephone-fill"></i>
                     <div>
                       <p class="contact-label">Informasi Workshop</p>
-                      <p class="contact-number">+62 856 076 01828</p>
+                      <p class="contact-number">+62 8560 7601 828</p>
                     </div>
                   </div>
                 </div>
@@ -611,20 +611,20 @@ ini_set('display_errors', 1);
 
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
+     <!--<section id="testimonials" class="testimonials section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+       Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Testimoni</h2>
         <p>Dengarkan apa yang dikatakan peserta workshop tentang pengalaman belajar mereka dengan WorkSmart</p>
       </div>
-      <!-- End Section Title -->
+       End Section Title -->
 
       <div class="container">
 
         <div class="row g-5">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <!--<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="testimonial-item">
               <img src="landingpage/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
               <h3>John Anderson</h3>
@@ -638,9 +638,9 @@ ini_set('display_errors', 1);
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
+          </div> end testimonial item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="testimonial-item">
               <img src="landingpage/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
               <h3>Emily Chen</h3>
@@ -654,9 +654,9 @@ ini_set('display_errors', 1);
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
+          </div> End testimonial item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+           <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="testimonial-item">
               <img src="landingpage/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
               <h3>Michael Roberts</h3>
@@ -670,9 +670,9 @@ ini_set('display_errors', 1);
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
+          </div> End testimonial item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+         <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="testimonial-item">
               <img src="landingpage/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
               <h3>Sarah Thompson</h3>
@@ -686,49 +686,49 @@ ini_set('display_errors', 1);
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
-          </div><!-- End testimonial item -->
+          </div> End testimonial item --> 
 
-        </div>
+        </div> 
 
-      </div>
+      </div> 
 
     </section>
     <!-- /Testimonials Section -->
 
     <!-- Bagian Statistik -->
-    <section id="stats" class="stats section">
+     <!--<section id="stats" class="stats section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6">
+           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="1" class="purecounter"></span>
               <p>Peserta Dilatih</p>
             </div>
-          </div><!-- End Stats Item -->
+                  </div> End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
+           <!--<div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
               <p>Workshop Tersedia</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div> End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
+           <!--<div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1" class="purecounter"></span>
               <p>Jam Pelatihan</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div> End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
+         <!--  <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
               <p>Instruktur Ahli</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div> End Stats Item -->
 
         </div>
 
@@ -738,7 +738,7 @@ ini_set('display_errors', 1);
     <!-- /Bagian Statistik -->
 
     <!-- Bagian FAQ -->
-    <section class="faq-9 faq section light-background" id="faq">
+    <!-- <section class="faq-9 faq section light-background" id="faq">
 
       <div class="container">
         <div class="row">
@@ -762,47 +762,47 @@ ini_set('display_errors', 1);
                   <p>Pendaftaran sangat mudah! Telusuri workshop yang tersedia, pilih kursus yang Anda inginkan, dan klik tombol "Daftar". Anda dapat melakukan pembayaran secara online dengan aman dan menerima konfirmasi pendaftaran segera.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> - End Faq item-->
 
-              <div class="faq-item">
+              <!-- <div class="faq-item">
                 <h3>Metode pembayaran apa yang diterima?</h3>
                 <div class="faq-content">
                   <p>Kami menerima berbagai metode pembayaran termasuk kartu kredit/debit, transfer bank, dan dompet digital. Semua pembayaran diproses secara aman melalui mitra gateway pembayaran terpercaya kami.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> End Faq item-->
 
-              <div class="faq-item">
+               <!--<div class="faq-item">
                 <h3>Apakah workshop dilakukan secara online atau tatap muka?</h3>
                 <div class="faq-content">
                   <p>Kami menawarkan workshop online dan tatap muka. Setiap daftar workshop menunjukkan format dengan jelas. Workshop online dilakukan melalui platform pembelajaran interaktif kami, sementara sesi tatap muka diadakan di pusat pelatihan yang ditentukan.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> End Faq item-->
 
-              <div class="faq-item">
+               <!--<div class="faq-item">
                 <h3>Apa yang terjadi jika saya melewatkan sesi workshop?</h3>
                 <div class="faq-content">
                   <p>Untuk workshop online, rekaman tersedia bagi peserta yang terdaftar. Untuk sesi tatap muka, kami menawarkan kelas pengganti jika memungkinkan. Silakan hubungi tim dukungan kami untuk pengaturan khusus.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> End Faq item-->
 
-              <div class="faq-item">
+               <!--<div class="faq-item">
                 <h3>Apakah Anda memberikan sertifikat setelah selesai?</h3>
                 <div class="faq-content">
                   <p>Ya, semua peserta menerima sertifikat digital setelah berhasil menyelesaikan workshop. Sertifikat ini dapat diunduh langsung dari dashboard akun Anda.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> End Faq item-->
 
-              <div class="faq-item">
+              <!-- <div class="faq-item">
                 <h3>Bagaimana kebijakan pengembalian dana Anda?</h3>
                 <div class="faq-content">
                   <p>Kami menawarkan pengembalian dana penuh jika pembatalan dilakukan 7 hari sebelum tanggal mulai workshop. Pengembalian dana sebagian tersedia hingga 48 jam sebelum workshop. Silakan tinjau kebijakan pengembalian dana lengkap kami untuk detail lebih lanjut.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> End Faq item-->
 
             </div>
           </div>
