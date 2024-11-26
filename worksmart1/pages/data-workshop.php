@@ -67,7 +67,7 @@ $workshops = getWorkshopByMitraId($_SESSION['user_id']);
         <div class="card">
             <div class="card-body">
               <h5 class="card-title">Data Workshop</h5>
-              <p class="text-dark">Berikut adalah daftar peserta yang terdaftar dalam sistem.</p>
+              <p class="text-dark">Berikut adalah daftar workshop yang terdaftar dalam sistem.</p>
               <a href="#" data-bs-toggle="modal" data-bs-target="#tambahWorkshop" class="brand-btn btn mt-2 mb-4 rounded-pill"><i class="bi bi-person-plus me-2"></i>Tambah Workshop</a>
               <a href="#" onclick="location.reload();" class="brand-btn btn mt-2 mb-4 rounded-pill"><i class="bi bi-arrow-clockwise me-2"></i>Refresh</a>              
               
@@ -76,20 +76,20 @@ $workshops = getWorkshopByMitraId($_SESSION['user_id']);
               <table class="table table-striped table-hover dt-responsive nowrap" id="participantTable" style="width:100%">
               <thead>
               <tr>
-                  <th>Title</th>
-                  <th>Description</th>
-                  <th>Banner</th>
-                  <th>Training Overview</th>
-                  <th>Competencies</th>
-                  <th>Session</th>
-                  <th>Requirements</th>
-                  <th>Benefits</th>
-                  <th>Price</th>
-                  <th>Location</th>
-                  <th>Start Date</th>
-                  <th>End Date</th>
+                  <th>Judul</th>
+                  <th>Deskripsi</th>
+                  <th>Pamflet</th>
+                  <th>Gambaran Umum</th>
+                  <th>Kompetensi</th>
+                  <th>Sesi</th>
+                  <th>Persyaratan</th>
+                  <th>Keuntungan</th>
+                  <th>Harga</th>
+                  <th>Lokasi</th>
+                  <th>Tanggal Mulai</th>
+                  <th>Tanggal Akhir</th>
                   <th>Status</th>
-                  <th>Actions</th>
+                  <th>Aksi</th>
               </tr>
               </thead>
               <tbody>
@@ -131,78 +131,78 @@ $workshops = getWorkshopByMitraId($_SESSION['user_id']);
                                   <input type="hidden" name="workshop_id" value="<?= $workshop['workshop_id'] ?>">
                                   <input type="hidden" name="old_banner" value="<?= $workshop['banner'] ?>">
                                   <div class="mb-3">
-                                      <label for="title" class="form-label">Title</label>
+                                      <label for="title" class="form-label">Judul</label>
                                       <input type="text" class="form-control" id="title" name="title" value="<?= $workshop['title'] ?>" required>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="description" class="form-label">Description</label>
+                                      <label for="description" class="form-label">Deskripsi</label>
                                       <textarea class="form-control" id="description" name="description" required><?= $workshop['description'] ?></textarea>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="banner" class="form-label">Banner</label>
+                                      <label for="banner" class="form-label">Pamflet</label>
                                       <input type="file" class="form-control" id="banner" name="banner">
                                       <small class="text-muted">Leave empty if you don't want to change the banner</small>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="training_overview" class="form-label">Training Overview</label>
+                                      <label for="training_overview" class="form-label">Gambaran Umum</label>
                                       <textarea class="form-control" id="training_overview" name="training_overview" required><?= $workshop['training_overview'] ?></textarea>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="trained_competencies" class="form-label">Competencies</label>
+                                      <label for="trained_competencies" class="form-label">Kompetensi</label>
                                       <textarea class="form-control" id="trained_competencies" name="trained_competencies" required><?= $workshop['trained_competencies'] ?></textarea>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="training_session" class="form-label">Session</label>
+                                      <label for="training_session" class="form-label">Sesi</label>
                                       <input type="text" class="form-control" id="training_session" name="training_session" value="<?= $workshop['training_session'] ?>" required>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="requirements" class="form-label">Requirements</label>
+                                      <label for="requirements" class="form-label">Persyaratan</label>
                                       <textarea class="form-control" id="requirements" name="requirements" required><?= $workshop['requirements'] ?></textarea>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="benefits" class="form-label">Benefits</label>
+                                      <label for="benefits" class="form-label">Keuntungan</label>
                                       <textarea class="form-control" id="benefits" name="benefits" required><?= $workshop['benefits'] ?></textarea>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="price" class="form-label">Price</label>
+                                      <label for="price" class="form-label">Harga</label>
                                       <input type="number" class="form-control" id="price" name="price" value="<?= $workshop['price'] ?>" required>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="location" class="form-label">Location</label>
+                                      <label for="location" class="form-label">Lokasi</label>
                                       <input type="text" class="form-control" id="location" name="location" value="<?= $workshop['location'] ?>" required>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="start_date" class="form-label">Start Date</label>
+                                      <label for="start_date" class="form-label">Tanggal Mulai</label>
                                       <input type="datetime-local" class="form-control" id="start_date" name="start_date" value="<?= date('Y-m-d\TH:i', strtotime($workshop['start_date'])) ?>" required>
                                   </div>
                                     
                                   <div class="mb-3">
-                                      <label for="end_date" class="form-label">End Date</label>
+                                      <label for="end_date" class="form-label">Tanggal Akhir</label>
                                       <input type="datetime-local" class="form-control" id="end_date" name="end_date" value="<?= date('Y-m-d\TH:i', strtotime($workshop['end_date'])) ?>" required>
                                   </div>
                                     
                                   <div class="mb-3">
                                       <label for="status" class="form-label">Status</label>
                                       <select class="form-select" id="status" name="status" required>
-                                          <option value="active" <?= $workshop['status'] == 'active' ? 'selected' : '' ?>>Active</option>
-                                          <option value="inactive" <?= $workshop['status'] == 'inactive' ? 'selected' : '' ?>>Inactive</option>
-                                          <option value="cancelled" <?= $workshop['status'] == 'cancelled' ? 'selected' : '' ?>>Cancelled</option>
+                                          <option value="active" <?= $workshop['status'] == 'active' ? 'selected' : '' ?>>Aktif</option>
+                                          <option value="inactive" <?= $workshop['status'] == 'inactive' ? 'selected' : '' ?>>Non Aktif</option>
+                                          <option value="cancelled" <?= $workshop['status'] == 'cancelled' ? 'selected' : '' ?>>Dibatalkan</option>
                                       </select>
                                   </div>
                                     
                                   <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                      <button type="submit" name="updateWorkshop" class="btn btn-primary brand-bg-color">Save Changes</button>
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                      <button type="submit" name="updateWorkshop" class="btn btn-primary brand-bg-color">Simpan</button>
                                   </div>
                               </form>
                           </div>
@@ -232,7 +232,7 @@ $workshops = getWorkshopByMitraId($_SESSION['user_id']);
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer brand-bg-color">
     <div class="copyright text-light">
-      © Copyright <strong><span>WorkSmart</span></strong>. All Rights Reserved
+      © Copyright <strong><span>WorkSmart</span></strong>. 
     </div>
   </footer><!-- End Footer -->
 

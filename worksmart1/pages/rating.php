@@ -211,7 +211,7 @@ $purchasedWorkshops = getPurchasedWorkshops($_SESSION['user_id']);
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer brand-bg-color">
     <div class="copyright text-light">
-      © Copyright <strong><span>WorkSmart</span></strong>. All Rights Reserved
+      © Copyright <strong><span>WorkSmart</span></strong>. 
     </div>
   </footer><!-- End Footer -->
 

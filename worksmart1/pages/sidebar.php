@@ -141,13 +141,20 @@
                     <span>Workshop</span>
                   </a>
                 </li>
-        
+
                 <li class="nav-item">
+                  <a class="nav-link collapsed" href="rating.php">
+                    <i class="bi bi-star"></i>
+                    <span>Feedback</span>
+                  </a>
+                </li>
+        
+               <!-- <li class="nav-item">
                   <a class="nav-link collapsed" href="data-workshop.php">
                     <i class="bi bi-plus-square"></i>
                     <span>Buat Workshop Baru</span>
                   </a>
-                </li>
+                </li> -->
         
                 <li class="nav-item">
                   <a class="nav-link collapsed" data-bs-target="#laporan-nav" data-bs-toggle="collapse" href="#">
@@ -167,7 +174,7 @@
                   </ul>
                 </li>
         
-                <li class="nav-item">
+             <!--   <li class="nav-item">
                   <a class="nav-link collapsed" href="kalender.php">
                     <i class="bi bi-calendar3"></i>
                     <span>Kalender</span>
@@ -179,7 +186,7 @@
                     <i class="bi bi-envelope"></i>
                     <span>Pesan</span>
                   </a>
-                </li>      
+                </li>    -->  
       <?php endif; ?>
     </ul>
 
