@@ -74,7 +74,7 @@ checkAuthorized();
         <div class="col-md-6">
           <div class="card rounded-4 mt-4 mb-4">
             <div class="card-header brand-color">
-              Log in to your account
+            Masuk ke akun Anda
             </div>
             <div class="card-body">
               <p class="text-muted">Masuk untuk mengakses fitur eksklusif, kolaborasi dengan mitra, dan kelola workshop Anda dengan mudah di Worksmart.</p>
@@ -82,8 +82,8 @@ checkAuthorized();
               <!-- Form Login -->
               <form method="POST" action="../controllers/controller.php">
                 <div class="mb-3">
-                  <label for="email" class="form-label brand-color">Email address</label>
-                  <input type="text" class="form-control p-3 rounded-3" id="email" name="username_email" placeholder="Email address" required>
+                  <label for="email" class="form-label brand-color">Email </label>
+                  <input type="text" class="form-control p-3 rounded-3" id="email" name="username_email" placeholder="Email " required>
                 </div>
 
                 <div class="mb-3">
@@ -97,7 +97,7 @@ checkAuthorized();
                 <div class="mb-3">
                   <label for="role" class="form-label brand-color">Login sebagai</label>
                   <select class="form-select p-3 rounded-3" id="role" name="role" required>
-                    <option value="">-- Pilih --</option>
+                    <option selected disabled  value="">-- Pilih --</option>
                     <option value="mitra">Mitra</option>
                     <option value="user">Peserta</option>
                     <option value="admin">Admin</option>
@@ -118,12 +118,12 @@ checkAuthorized();
                     <button type="submit" name="login" class="btn btn-primary rounded-pill btn-lg w-100">Log in</button>
                   </div>
                   <div class="col-md-6 d-flex align-items-center justify-content-end">
-                    <a href="#" class="link-primary">Forgot your password?</a>
+                    <a href="#" class="link-primary">Lupa Sandi</a>
                   </div>
                 </div>
 
                 <div class="text-center mb-3">
-                  <span>Or log in with</span>
+                  <span>Masuk Menggunakan</span>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
@@ -135,7 +135,7 @@ checkAuthorized();
                 </div>                
                 
                 <div class="text-muted text-center">
-                  Not a member? Get exclusive access to exhibitions and events, free admission every day, and much more. <a href="#" class="link-primary">Join today</a>.
+                Bukan anggota? Dapatkan akses eksklusif ke pameran dan banyak lagi. <a href=" " class="link-primary">Gabung Sekarang</a>.
                 </div>
               </form>            </div>
           </div>
@@ -143,12 +143,12 @@ checkAuthorized();
         <div class="col-md-6">
           <div class="card rounded-4 mt-4 mb-4">
             <div class="card-header brand-color">
-              Create your new account
+            Buat akun baru Anda
             </div>
             <div class="card-body">
               <p class="text-muted">Gabung dengan Worksmart untuk melihat workshop atau mengelola workshop, bertemu dengan mitra baru, dan menjangkau audiens yang lebih luas.</p>
               <div class="d-grid">
-                <a type="button" class="btn btn-outline-primary btn-lg rounded-pill" href="register.php">Create an account</a>
+                <a type="button" class="btn btn-outline-primary btn-lg rounded-pill" href="register.php">Buat akun</a>
               </div>
             </div>
           </div>

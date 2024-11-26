@@ -76,22 +76,22 @@ $user_data = getUserProfile($_SESSION['user_id']);
                 <div class="card-body pt-3">
                     <ul class="nav nav-tabs nav-tabs-bordered">
                         <li class="nav-item">
-                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button>
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Profile</button>
                         </li>
                         <li class="nav-item">
                             <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Edit Profile</button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Change Password</button>
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Perbarui Password</button>
                         </li>
                     </ul>
 
                     <div class="tab-content pt-2">
                         <!-- Overview Tab -->
                         <div class="tab-pane fade show active profile-overview" id="profile-overview">
-                            <h5 class="card-title">Profile Details</h5>
+                            <h5 class="card-title">Detail Profil</h5>
                             <div class="row">
-                                <div class="col-lg-3 col-md-4 label">Full Name</div>
+                                <div class="col-lg-3 col-md-4 label">Nama Lengkap</div>
                                 <div class="col-lg-9 col-md-8"><?= htmlspecialchars($user_data['first_name'] . ' ' . $user_data['last_name']) ?></div>
                             </div>
                             <div class="row">
@@ -107,7 +107,7 @@ $user_data = getUserProfile($_SESSION['user_id']);
                                 <div class="col-lg-9 col-md-8"><?= htmlspecialchars($user_data['email']) ?></div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-3 col-md-4 label">Phone</div>
+                                <div class="col-lg-3 col-md-4 label">Handphone</div>
                                 <div class="col-lg-9 col-md-8"><?= htmlspecialchars($user_data['phone']) ?></div>
                             </div>
                         </div>
@@ -118,14 +118,14 @@ $user_data = getUserProfile($_SESSION['user_id']);
                                 <input type="hidden" name="updateProfile">
                                 
                                 <div class="row mb-3">
-                                    <label for="firstName" class="col-md-4 col-lg-3 col-form-label">First Name</label>
+                                    <label for="firstName" class="col-md-4 col-lg-3 col-form-label">Nama Depan</label>
                                     <div class="col-md-8 col-lg-9">
                                         <input name="first_name" type="text" class="form-control" value="<?= htmlspecialchars($user_data['first_name']) ?>" required>
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="lastName" class="col-md-4 col-lg-3 col-form-label">Last Name</label>
+                                    <label for="lastName" class="col-md-4 col-lg-3 col-form-label">Nama Belakang</label>
                                     <div class="col-md-8 col-lg-9">
                                         <input name="last_name" type="text" class="form-control" value="<?= htmlspecialchars($user_data['last_name']) ?>" required>
                                     </div>
@@ -139,14 +139,14 @@ $user_data = getUserProfile($_SESSION['user_id']);
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
+                                    <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Handphone</label>
                                     <div class="col-md-8 col-lg-9">
                                         <input name="phone" type="text" class="form-control" value="<?= htmlspecialchars($user_data['phone']) ?>" required>
                                     </div>
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                    <button type="submit" class="btn btn-primary">simpan</button>
                                 </div>
                             </form>
                         </div>
@@ -157,28 +157,28 @@ $user_data = getUserProfile($_SESSION['user_id']);
                                 <input type="hidden" name="updatePassword">
 
                                 <div class="row mb-3">
-                                    <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                                    <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Password Saat Ini</label>
                                     <div class="col-md-8 col-lg-9">
                                         <input name="current_password" type="password" class="form-control" required>
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                                    <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Password Baru</label>
                                     <div class="col-md-8 col-lg-9">
                                         <input name="new_password" type="password" class="form-control" required>
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="confirmPassword" class="col-md-4 col-lg-3 col-form-label">Confirm Password</label>
+                                    <label for="confirmPassword" class="col-md-4 col-lg-3 col-form-label">Konfirmasi Password</label>
                                     <div class="col-md-8 col-lg-9">
                                         <input name="confirm_password" type="password" class="form-control" required>
                                     </div>
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-primary">Change Password</button>
+                                    <button type="submit" class="btn btn-primary">Simpan Password</button>
                                 </div>
                             </form>
                         </div>
@@ -196,7 +196,7 @@ $user_data = getUserProfile($_SESSION['user_id']);
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer brand-bg-color">
     <div class="copyright text-light">
-      © Copyright <strong><span>WorkSmart</span></strong>. All Rights Reserved
+      © Copyright <strong><span>WorkSmart</span></strong>.
     </div>
   </footer><!-- End Footer -->
 

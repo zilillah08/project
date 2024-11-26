@@ -91,8 +91,6 @@ $payments = getPaymentData($_SESSION['user_id']);
                           <th>ID</th>
                           <th>Workshop</th>
                           <th>Mitra</th>
-                          <th>Jumlah</th>
-                          <th>Metode</th>
                           <th>Status</th>
                           <th>Tanggal</th>
                           <th>Aksi</th>
@@ -145,14 +143,6 @@ $payments = getPaymentData($_SESSION['user_id']);
                                   <div class="row mb-3">
                                     <div class="col-sm-4 fw-bold">Mitra</div>
                                     <div class="col-sm-8"><?= $payment['mitra_name'] ?></div>
-                                  </div>
-                                  <div class="row mb-3">
-                                    <div class="col-sm-4 fw-bold">Jumlah</div>
-                                    <div class="col-sm-8">Rp <?= number_format($payment['amount'], 0, ',', '.') ?></div>
-                                  </div>
-                                  <div class="row mb-3">
-                                    <div class="col-sm-4 fw-bold">Metode</div>
-                                    <div class="col-sm-8"><?= ucfirst(str_replace('_', ' ', $payment['payment_method'])) ?></div>
                                   </div>
                                   <div class="row mb-3">
                                     <div class="col-sm-4 fw-bold">Status</div>

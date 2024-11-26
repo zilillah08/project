@@ -429,7 +429,7 @@ $workshops = getWorkshopsWithMitra(); // Using the enhanced function
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer brand-bg-color">
     <div class="copyright text-light">
-      &copy; Copyright <strong><span>WorkSmart</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>WorkSmart</span></strong>. 
     </div>
   </footer><!-- End Footer -->
 

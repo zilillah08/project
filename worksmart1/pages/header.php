@@ -128,7 +128,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="profil.php">
                 <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
+                <span>Setting akun</span>
               </a>
             </li>
             <li>
@@ -148,7 +148,7 @@
             <li>
               <a class="dropdown-item d-flex align-items-center" href="../controllers/controller.php?logout=true">
                 <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
+                <span>Log out</span>
               </a>
             </li>
 

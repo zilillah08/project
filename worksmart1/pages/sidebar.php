@@ -106,7 +106,7 @@
                 </li>
         
                 <li class="nav-item">
-                  <a class="nav-link collapsed" href="data-pembayaran.php?u=aktivitas">
+                  <a class="nav-link collapsed" href="aktivitas.php">
                     <i class="bi bi-activity"></i>
                     <span>Aktivitas</span>
                   </a>
@@ -119,12 +119,12 @@
                   </a>
                 </li>
         
-                <li class="nav-item">
+              <!--  <li class="nav-item">
                   <a class="nav-link collapsed" href="pesan.php">
                     <i class="bi bi-envelope"></i>
                     <span>Pesan</span>
                   </a>
-                </li>
+                </li> -->
         
       <?php elseif($_SESSION['role'] == 'mitra'): ?>
                 <!-- Menu untuk mitra -->

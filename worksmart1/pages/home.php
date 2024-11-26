@@ -829,8 +829,6 @@ ini_set('display_errors', 1);
             <p><strong>Email:</strong> <span>info@worksmart.id</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
           </div>
         </div>

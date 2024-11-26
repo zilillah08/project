@@ -235,8 +235,7 @@ checkAuthorized();
                 required
               />
               <label class="form-check-label brand-color" for="shareData">
-                Share my registration data with our content providers for
-                marketing purposes.
+              Bagikan data pendaftaran dengan penyedia konten kami untuk keperluan pemasaran
               </label>
             </div>
 
@@ -248,12 +247,12 @@ checkAuthorized();
                   name="createUser"
                   type="submit"
                 >
-                  Sign up
+                  Daftar
                 </button>
               </div>
               <div class="col-md-6">
                 <p class="brand-color mb-0">
-                  Already have an account?
+                  Sudah punya akun?
                   <a href="index.php" class="brand-color"> Log in </a>
                 </p>
               </div>

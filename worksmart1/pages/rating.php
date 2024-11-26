@@ -77,10 +77,10 @@ $purchasedWorkshops = getPurchasedWorkshops($_SESSION['user_id']);
 
               <thead>
               <tr>
-                  <th>Workshop Title</th>
-                  <th>Current Rating</th>
-                  <th>Your Review</th>
-                  <th>Actions</th>
+                  <th>Nama Workshop</th>
+                  <th>Rating</th>
+                  <th>Deskripsi Rating</th>
+                  <th>Aksi</th>
               </tr>
               </thead>
               <tbody>
@@ -270,7 +270,7 @@ $purchasedWorkshops = getPurchasedWorkshops($_SESSION['user_id']);
         ],  
         language: {
           search: "_INPUT_",
-          searchPlaceholder: "Search records...",
+          searchPlaceholder: "Search...",
           lengthMenu: "_MENU_ records per page",
           info: "Showing _START_ to _END_ of _TOTAL_ entries",
           paginate: {

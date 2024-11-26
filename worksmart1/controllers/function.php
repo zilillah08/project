@@ -178,7 +178,7 @@ function login($username_email, $password, $role) {
             $_SESSION['role'] = $user['role'];
             return ['status' => 'success', 'message' => 'Login successful'];
         }
-        return ['status' => 'error', 'message' => 'Incorrect password'];
+        return ['status' => 'error', 'message' => ' password salah'];
     }
     return ['status' => 'error', 'message' => 'No user found with this username/email and role'];
 }
