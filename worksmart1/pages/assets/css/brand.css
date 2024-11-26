@@ -1,0 +1,51 @@
+/* BRAND */
+.brand-color{
+    color: #02396f!important;
+  }
+  .brand-color-secondary{
+    color: #a9bbcc!important;
+  }
+  .brand-bg-color{
+    background-color: #02396f!important;
+  }
+  .brand-bg-color-secondary{
+    background-color: #a9bbcc!important;
+  }
+
+  .brand-btn {
+    background-color: #02396f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .brand-btn:hover {
+    background-color: #a9bbcc;
+    transform: translateY(-2px);
+  }
+
+  .brand-btn-outline {
+    background-color: transparent;
+    color: #02396f;
+    border: 2px solid #02396f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .brand-btn-outline:hover {
+    background-color: #02396f;
+    color: white;
+  }
+
+  h1,h2,h3,h4,h5,p{
+    color: white;
+  }
+
+  #header {
+    transition: transform 0.3s ease-in-out!important;
+  }
