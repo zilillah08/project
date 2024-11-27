@@ -300,7 +300,7 @@ $role = $_SESSION['role'];
 
                             <div id="bankDetailsContainer" class="mt-4 p-3 bg-light rounded-3">
                               <div id="bankDetails">
-                                <!-- Previous bank details code remains -->
+                                <!-- Kode detail bank sebelumnya tetap ada -->
                               </div>
     
                               <div class="mb-3">
