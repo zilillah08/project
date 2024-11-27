@@ -43,7 +43,7 @@ CREATE TABLE `banks` (
 
 INSERT INTO `banks` (`bank_id`, `bank_name`, `account_name`, `account_number`, `swift_code`, `is_active`, `created_at`) VALUES
 (1, 'Bank Mandiri', 'Mufrida Fara Diani', '1430029739875', 'BMRIIDJAXXX', 1, '2024-11-16 19:59:19');
-(2, 'Bank Jatim', 'Nurizzati Adistya Putri', '0316921281', 'BJTMIDJAXXX', 1, '2024-27-11');
+
 -- --------------------------------------------------------
 
 --
