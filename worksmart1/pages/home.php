@@ -346,19 +346,17 @@ ini_set('display_errors', 1);
 
                     <!-- Add this rating section after card-image-wrapper -->
                     <div class="rating-wrapper mt-2 mb-2 d-flex align-items-center justify-content-between">
-                    <div class="rating-stars">
-    <?php
-    $rating = isset($workshop['average_rating']) ? round((float)$workshop['average_rating']) : 0;
-    for ($i = 1; $i <= 5; $i++) {
-        if ($i <= $rating) {
-            echo '<i class="bi bi-star-fill text-warning"></i>';
-        } else {
-            echo '<i class="bi bi-star text-muted"></i>';
-        }
-    }
-    ?>
-</div>
-
+                        <div class="rating-stars">
+                            <?php
+                            $rating = round($workshop['average_rating']);
+                            for ($i = 1; $i <= 5; $i++) {
+                                if ($i <= $rating) {
+                                    echo '<i class="bi bi-star-fill text-warning"></i>';
+                                } else {
+                                    echo '<i class="bi bi-star text-muted"></i>';
+                                }
+                            }
+                            ?>
                             <span class="ms-2 text-muted">
                                 <?= number_format($workshop['average_rating'], 1) ?> 
                                 (<?= $workshop['total_reviews'] ?> ulasan)
