@@ -85,7 +85,7 @@
           <?php } ?>
         <!-- End Notification Nav -->
 
-        <li class="nav-item dropdown">
+      <!--  <li class="nav-item dropdown">
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-chat-left-text"></i>
             <span class="badge bg-success badge-number message-count">0</span>
@@ -98,15 +98,15 @@
             </li>
             <li><hr class="dropdown-divider"></li>
 
-            <!-- Messages will be inserted here dynamically -->
+            Messages will be inserted here dynamically 
             <div class="message-items"></div>
 
             <li><hr class="dropdown-divider"></li>
             <li class="dropdown-footer">
               <a href="pesan.php">Show all messages</a>
             </li>
-          </ul>
-        </li>
+          </ul> 
+        </li> -->
         <!-- End Messages Nav -->
 
         <li class="nav-item dropdown pe-3">

@@ -100,7 +100,7 @@ ini_set('display_errors', 1);
       <?php if ($isLogin) { ?>
         <a class="btn-getstarted" href="dashboard.php">Dashboard</a>        
       <?php } else { ?>
-            <a class="btn-getstarted" href="index.php">Daftar</a>
+            <a class="btn-getstarted" href="../index.php">Daftar</a>
       <?php } ?>
 
     </div>
