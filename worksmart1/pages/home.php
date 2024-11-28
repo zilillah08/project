@@ -529,21 +529,35 @@ ini_set('display_errors', 1);
                     
                     <div class="rating-summary bg-light p-4 rounded-4 mb-4">
                       <div class="row align-items-center">
-                        <div class="col-md-6 text-center">
-                          <h2 class="display-4 fw-bold text-primary"><?= number_format($workshop['average_rating'], 1) ?></h2>
-                          <p class="text-muted mb-2">dari 5.0</p>
-                          <div class="stars">
-                            <?php
-                            $rating = round($workshop['average_rating']);
-                            for ($i = 1; $i <= 5; $i++) {
-                              echo $i <= $rating ? 
-                                '<i class="bi bi-star-fill text-warning fs-4"></i>' : 
-                                '<i class="bi bi-star text-muted fs-4"></i>';
-                            }
-                            ?>
-                          </div>
-                          <p class="mt-2 text-muted"><?= $workshop['total_reviews'] ?> ulasan</p>
-                        </div>
+                      <div class="col-md-6 text-center">
+                      <h2 class="display-4 fw-bold text-primary">
+                          <?= isset($workshop['average_rating']) && is_numeric($workshop['average_rating']) 
+                              ? number_format($workshop['average_rating'], 1) 
+                              : '0.0' ?>
+                      </h2>
+                      <p class="text-muted mb-2">dari 5.0</p>
+                      <div class="stars">
+                          <?php
+                          // Validasi nilai average_rating sebelum menggunakan round()
+                          $rating = isset($workshop['average_rating']) && is_numeric($workshop['average_rating']) 
+                              ? round($workshop['average_rating']) 
+                              : 0;
+
+                          // Loop untuk menampilkan ikon bintang
+                          for ($i = 1; $i <= 5; $i++) {
+                              echo $i <= $rating 
+                                  ? '<i class="bi bi-star-fill text-warning fs-4"></i>' 
+                                  : '<i class="bi bi-star text-muted fs-4"></i>';
+                          }
+                          ?>
+    </div>
+    <p class="mt-2 text-muted">
+        <?= isset($workshop['total_reviews']) && is_numeric($workshop['total_reviews']) 
+            ? $workshop['total_reviews'] 
+            : '0' ?> ulasan
+    </p>
+</div>
+
                       </div>
                     </div>
 

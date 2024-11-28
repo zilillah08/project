@@ -292,18 +292,29 @@ $workshops = getWorkshopsWithMitra(); // Using the enhanced function
                         <!-- Rating Section -->
                         <div class="rating-wrapper mb-3">
                           <div class="stars">
-                              <?php
-                              $rating = round($workshop['average_rating']);
-                              for ($i = 1; $i <= 5; $i++) {
-                                  echo $i <= $rating ? 
-                                      '<i class="bi bi-star-fill text-warning"></i>' : 
-                                      '<i class="bi bi-star text-muted"></i>';
-                              }
-                              ?>
-                              <span class="ms-2 text-muted">
-                                  <?= number_format($workshop['average_rating'], 1) ?> 
-                                  (<?= $workshop['total_reviews'] ?> ulasan)
-                              </span>
+                          <?php
+                          // Validasi nilai average_rating sebelum menggunakan round()
+                          $rating = isset($workshop['average_rating']) && is_numeric($workshop['average_rating']) 
+                              ? round($workshop['average_rating']) 
+                              : 0;
+
+                          // Loop untuk menampilkan ikon bintang
+                          for ($i = 1; $i <= 5; $i++) {
+                              echo $i <= $rating ? 
+                                  '<i class="bi bi-star-fill text-warning"></i>' : 
+                                  '<i class="bi bi-star text-muted"></i>';
+                          }
+                          ?>
+
+                          <span class="ms-2 text-muted">
+                              <?= isset($workshop['average_rating']) && is_numeric($workshop['average_rating']) 
+                                  ? number_format($workshop['average_rating'], 1) 
+                                  : '0.0' ?> 
+                              (<?= isset($workshop['total_reviews']) && is_numeric($workshop['total_reviews']) 
+                                  ? $workshop['total_reviews'] 
+                                  : '0' ?> ulasan)
+                          </span>
+
                           </div>
                         </div>
 
