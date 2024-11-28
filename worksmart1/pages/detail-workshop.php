@@ -278,7 +278,7 @@ $role = $_SESSION['role'];
                     </div>
                   </div>
 
-                  <!-Step 3: Konfirmasi Pembayaran -->
+                  <!--Step 3: Konfirmasi Pembayaran -->
                   <div class="tab-pane fade" id="step3">
                   -   <div class="row justify-content-center">
                       <div class="col-lg-8">
