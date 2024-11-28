@@ -249,19 +249,19 @@ $role = $_SESSION['role'];
                                   <label class="form-check-label ms-2" for="transfer">
                                     <i class="bi bi-bank text-primary"></i> Transfer Bank
                                   </label>
-                                </div>
+                                <!-- </div>
                                 <div class="payment-option mb-3 p-3 border rounded-3 hover-shadow">
                                   <input class="form-check-input" type="radio" name="paymentMethod" id="ewallet" value="ewallet" disabled>
                                   <label class="form-check-label ms-2" for="ewallet">
                                     <i class="bi bi-wallet2 text-success"></i> E-Wallet
                                   </label>
-                                </div>
-                                <div class="payment-option mb-3 p-3 border rounded-3 hover-shadow">
+                                </div> -->
+                                <!-- <div class="payment-option mb-3 p-3 border rounded-3 hover-shadow">
                                   <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" disabled>
                                   <label class="form-check-label ms-2" for="creditCard">
                                     <i class="bi bi-credit-card text-danger"></i> Kartu Kredit
                                   </label>
-                                </div>
+                                </div> -->
                               </div>
                               <div class="d-grid gap-2">
                                 <button type="button" class="btn btn-secondary btn-lg rounded-pill" onclick="prevStep()">
@@ -300,7 +300,7 @@ $role = $_SESSION['role'];
 
                             <div id="bankDetailsContainer" class="mt-4 p-3 bg-light rounded-3">
                               <div id="bankDetails">
-                                <!-- Previous bank details code remains -->
+                                <!-- Kode detail bank sebelumnya tetap ada -->
                               </div>
     
                               <div class="mb-3">
