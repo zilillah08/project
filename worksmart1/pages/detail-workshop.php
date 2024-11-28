@@ -249,14 +249,24 @@ $role = $_SESSION['role'];
                                   <label class="form-check-label ms-2" for="transfer">
                                     <i class="bi bi-bank text-primary"></i> Transfer Bank
                                   </label>
+<<<<<<< HEAD
                                 </div>
                                 <div class="payment-option mb-3 p-3 border rounded-3 hover-shadow">
+=======
+                                 </div>
+                               <!-- <div class="payment-option mb-3 p-3 border rounded-3 hover-shadow">
+>>>>>>> 535bd1254691c39c1eda65792a8f89ff7ca7dfc7
                                   <input class="form-check-input" type="radio" name="paymentMethod" id="ewallet" value="ewallet" disabled>
                                   <label class="form-check-label ms-2" for="ewallet">
                                     <i class="bi bi-wallet2 text-success"></i> E-Wallet
                                   </label>
+<<<<<<< HEAD
                                 </div>
                                 <div class="payment-option mb-3 p-3 border rounded-3 hover-shadow">
+=======
+                                </div> 
+                                 <div class="payment-option mb-3 p-3 border rounded-3 hover-shadow">
+>>>>>>> 535bd1254691c39c1eda65792a8f89ff7ca7dfc7
                                   <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" disabled>
                                   <label class="form-check-label ms-2" for="creditCard">
                                     <i class="bi bi-credit-card text-danger"></i> Kartu Kredit
