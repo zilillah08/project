@@ -829,7 +829,7 @@ ini_set('display_errors', 1);
             <p><strong>Email:</strong> <span>info@worksmart.id</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/worksmart.wmk?igsh=amNkY3NwcWd5OG5l"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
