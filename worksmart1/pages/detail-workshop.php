@@ -262,7 +262,7 @@ $role = $_SESSION['role'];
                                     <i class="bi bi-credit-card text-danger"></i> Kartu Kredit
                                   </label>
                                 </div> -->
-                              </div>
+                              </div> 
                               <div class="d-grid gap-2">
                                 <button type="button" class="btn btn-secondary btn-lg rounded-pill" onclick="prevStep()">
                                   <i class="bi bi-arrow-left"></i> Kembali
