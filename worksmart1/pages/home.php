@@ -347,20 +347,31 @@ ini_set('display_errors', 1);
                     <!-- Add this rating section after card-image-wrapper -->
                     <div class="rating-wrapper mt-2 mb-2 d-flex align-items-center justify-content-between">
                         <div class="rating-stars">
-                            <?php
-                            $rating = round($workshop['average_rating']);
-                            for ($i = 1; $i <= 5; $i++) {
-                                if ($i <= $rating) {
-                                    echo '<i class="bi bi-star-fill text-warning"></i>';
-                                } else {
-                                    echo '<i class="bi bi-star text-muted"></i>';
-                                }
-                            }
-                            ?>
-                            <span class="ms-2 text-muted">
-                                <?= number_format($workshop['average_rating'], 1) ?> 
-                                (<?= $workshop['total_reviews'] ?> ulasan)
-                            </span>
+                        <?php
+                          // Validasi nilai average_rating sebelum menggunakan round()
+                          $rating = isset($workshop['average_rating']) && is_numeric($workshop['average_rating']) 
+                              ? round($workshop['average_rating']) 
+                              : 0;
+
+                          // Loop untuk menampilkan ikon bintang
+                          for ($i = 1; $i <= 5; $i++) {
+                              if ($i <= $rating) {
+                                  echo '<i class="bi bi-star-fill text-warning"></i>';
+                              } else {
+                                  echo '<i class="bi bi-star text-muted"></i>';
+                              }
+                          }
+                          ?>
+
+                           <span class="ms-2 text-muted">
+                            <?= isset($workshop['average_rating']) && is_numeric($workshop['average_rating']) 
+                                ? number_format($workshop['average_rating'], 1) 
+                                : '0.0' ?> 
+                            (<?= isset($workshop['total_reviews']) && is_numeric($workshop['total_reviews']) 
+                                ? $workshop['total_reviews'] 
+                                : '0' ?> ulasan)
+                        </span>
+
                         </div>
                         <span class="participants-count">
                             <i class="bi bi-people-fill text-primary"></i> 
