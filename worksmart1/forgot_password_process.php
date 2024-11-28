@@ -66,7 +66,7 @@ try {
 <html lang="en">
   <head>
     <!-- Document Title -->
-    <title class="brand-color">Forgot Password Sekarang</title>
+    <title class="brand-color">Lupa Sandi</title>
 <!-- Favicons -->
 <link href="pages/assets/img/logo-worksmart.png" rel="icon">
     <!-- External CSS Links -->
