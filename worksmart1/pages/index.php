@@ -29,6 +29,27 @@ checkAuthorized();
   <!-- Template Main CSS File -->
   <link href="assets/css/brand.css" rel="stylesheet">
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Password Toggle Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const passwordInput = document.getElementById("password");
+      const toggleButton = document.querySelector(".password-toggle");
+
+      toggleButton.addEventListener("click", () => {
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          toggleButton.textContent = "Show";
+        } else {
+          passwordInput.type = "password";
+          toggleButton.textContent = "Hide";
+        }
+      });
+    });
+  </script>
+  
   <style>
     body {
       background-color: #003366;
@@ -65,6 +86,7 @@ checkAuthorized();
       padding: 12px;
     }
   </style>
+  
 </head>
 
 <body>

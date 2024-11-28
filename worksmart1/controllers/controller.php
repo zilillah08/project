@@ -244,7 +244,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['createUser'])) {
         if ($createResult === "success") {
             $_SESSION['success_message'] = "Pendaftaran berhasil! Silahkan login.";
             echo "<script>window.alert('Pendaftaran berhasil. Silahkan login.');</script>";
-            header('Location: ' . $fe_path . 'index.php');
+            header('Location: ' . $fe_path . '.index.php');
             exit();
         } else {
             $_SESSION['error_message'] = $createResult;
