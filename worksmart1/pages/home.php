@@ -329,6 +329,7 @@ ini_set('display_errors', 1);
         </div>
 
         <div class="row gy-4">
+          
           <!-- Workshop Cards with Enhanced Design -->
           <?php foreach ($workshops as $workshop): ?>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
