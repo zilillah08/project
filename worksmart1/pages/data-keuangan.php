@@ -77,9 +77,9 @@ $data = getFinancialDataAdmin();
                       <i class="bi bi-currency-dollar"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>Rp. <?php echo number_format(countTotalEarnings()); ?></h6>
-                      <span class="text-muted small pt-2">Total Penghasilan</span>
-                    </div>
+                    <h6> Rp. <?php echo number_format(countTotalEarnings() ?? 0); ?> </h6>
+                    <span class="text-muted small pt-2">Total Penghasilan</span>
+                  </div>
                   </div>
                 </div>
               </div>
