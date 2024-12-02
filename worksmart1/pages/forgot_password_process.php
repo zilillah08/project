@@ -37,7 +37,7 @@ try {
     $mail->Subject = 'Password Reset';
     $mail->Body    = 'To reset your password click <a href="http://localhost/project/worksmart1/pages/forgot_password.php?code=' . $code . '">here</a>. </br>Reset your password in a day.';
 
-    $conn = new mysqli('localhost', 'root', '', 'worksmart1');
+    $conn = new mysqli('localhost', 'root', '', 'worksmart');
 
     if ($conn->connect_error) {
         die('Could not connect to the database.');

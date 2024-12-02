@@ -96,6 +96,18 @@ checkAuthorized();
         border-radius: 0 8px 8px 0;
       }
     </style>
+    <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+      const password = document.getElementById('password').value;
+      const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+
+      if (!password.match(passwordPattern)) {
+        event.preventDefault(); // Mencegah form disubmit
+        alert("Password harus mengandung setidaknya 6 karakter yang terdiri dari huruf dan angka");
+      }
+    });
+</script>
+
   </head>
   <body>
     <div id="loading-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); z-index: 9999;">
@@ -184,11 +196,11 @@ checkAuthorized();
               id="password"
               name="password"
               type="password"
-              required
+              required  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+              title="Password harus mengandung setidaknya 8 karakter yang terdiri dari huruf dan angka"
             />
             <small class="brand-color">
-              Gunakan 8 karakter atau lebih dengan campuran huruf, angka &
-              simbol
+              Gunakan 8 karakter yang  terdiri dari huruf dan angka
             </small>
 
             <!-- Role Selection Section -->

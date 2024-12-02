@@ -34,18 +34,14 @@ checkAuthorized();
 
   <!-- Password Toggle Script -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const passwordInput = document.getElementById("password");
-      const toggleButton = document.querySelector(".password-toggle");
-
-      toggleButton.addEventListener("click", () => {
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          toggleButton.textContent = "Show";
-        } else {
-          passwordInput.type = "password";
-          toggleButton.textContent = "Hide";
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+      const togglePassword = document.querySelector('#togglePassword');
+      const passwordField = document.querySelector('#password');
+      
+      togglePassword.addEventListener('click', function() {
+        const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordField.setAttribute('type', type);
+        this.textContent = type === 'password' ? 'Show' : 'Hide';
       });
     });
   </script>
@@ -112,7 +108,7 @@ checkAuthorized();
                   <label for="password" class="form-label brand-color">Password</label>
                   <div class="input-group">
                     <input type="password" class="form-control password-input p-3" id="password" name="password" placeholder="Password" required>
-                    <button class="btn btn-outline-secondary password-toggle" type="button">Hide</button>
+                    <button type="button" id="togglePassword" class="btn btn-outline-secondary password-toggle">Show</button>
                   </div>
                 </div>
 
@@ -159,7 +155,8 @@ checkAuthorized();
                 <div class="text-muted text-center">
                 Bukan anggota? Dapatkan akses eksklusif ke pameran dan banyak lagi. <a href=" " class="link-primary">Gabung Sekarang</a>.
                 </div>
-              </form>            </div>
+              </form>            
+            </div>
           </div>
         </div>
         <div class="col-md-6">
