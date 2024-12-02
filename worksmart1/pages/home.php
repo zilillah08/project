@@ -79,10 +79,9 @@ ini_set('display_errors', 1);
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home.php#beranda" class="active">Beranda</a></li>
-          <li><a href="home.php#tentang" >Tentang</a></li>
-          <li><a href="home.php#workshop" >Workshop</a></li>
-          
+          <li><a href=" " class="active">Beranda</a></li>
+          <li><a href=" ">Tentang</a></li>
+          <li><a href=" ">Workshop</a></li>
           <?php if($isLogin) { $role = $_SESSION['role']; ?>
           <li class="dropdown"><a href=" "><span>Akun</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -244,7 +243,7 @@ ini_set('display_errors', 1);
                   <div class="profile d-flex align-items-center gap-3">
                     <img src="landingpage/assets/img/anggota.jpg" alt="Profil CEO" class="profile-image">
                     <div>
-                      <h4 class="profile-name">anggota wmk</h4>
+                      <h4 class="profile-name">Anggota</h4>
                       <p class="profile-position">Pendiri WorkSmart</p>
                     </div>
                   </div>
@@ -268,10 +267,10 @@ ini_set('display_errors', 1);
                 <img src="landingpage/assets/img/about-5.webp" alt="Pelatihan Workshop" class="img-fluid main-image rounded-4">
                 <img src="landingpage/assets/img/about-2.webp" alt="Diskusi Grup" class="img-fluid small-image rounded-4">
               </div>
-              <div class="experience-badge floating">
+              <!-- <div class="experience-badge floating">
                 <p>Diciptakan <span>Untuk</span></p>
                 <p>Menghadirkan workshop berkualitas</p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -329,7 +328,6 @@ ini_set('display_errors', 1);
         </div>
 
         <div class="row gy-4">
-          
           <!-- Workshop Cards with Enhanced Design -->
           <?php foreach ($workshops as $workshop): ?>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -853,7 +851,7 @@ ini_set('display_errors', 1);
             <p>Jl. Mastrip, krajan Timur, Sumbersari,</p>
             <p>Kec.Sumbersari, Kab.Jember Jawa Timur 68121</p>
             <p class="mt-3"><strong>Telepon:</strong> <span>+62 856 0760 1828</span></p>
-            <p><strong>Email:</strong> <span>info@worksmart.id</span></p>
+            <p><strong>Email:</strong> <span>worksmartwmk@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="https://www.instagram.com/worksmart.wmk?igsh=amNkY3NwcWd5OG5l"><i class="bi bi-instagram"></i></a>
@@ -863,44 +861,14 @@ ini_set('display_errors', 1);
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Tautan Cepat</h4>
           <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Workshop</a></li>
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Workshop</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Kategori Workshop</h4>
-          <ul>
-            <li><a href="#">Keterampilan Bisnis</a></li>
-            <li><a href="#">Pemasaran Digital</a></li>
-            <li><a href="#">Kepemimpinan</a></li>
-            <li><a href="#">Pengembangan Diri</a></li>
-            <li><a href="#">Keterampilan Profesional</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Untuk Peserta</h4>
-          <ul>
-            <li><a href="#">Cara Mendaftar</a></li>
-            <li><a href="#">Metode Pembayaran</a></li>
-            <li><a href="#">Jadwal Workshop</a></li>
-            <li><a href="#">Sertifikat</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Untuk Instruktur</h4>
-          <ul>
-            <li><a href="#">Menjadi Instruktur</a></li>
-            <li><a href="#">Ajukan Workshop</a></li>
-            <li><a href="#">Sumber Daya</a></li>
-            <li><a href="#">Panduan</a></li>
-            <li><a href="#">Dukungan</a></li>
-          </ul>
-        </div>
+       
+       
 
       </div>
     </div>
