@@ -249,7 +249,7 @@ checkAuthorized();
               <label class="form-check-label brand-color" for="shareData">
               Bagikan data pendaftaran dengan penyedia konten kami untuk keperluan pemasaran
               </label>
-            </div>
+            </div> <br>
 
             <!-- Form Submission Section -->
             <div class="row align-items-center">

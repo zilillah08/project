@@ -1,14 +1,15 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Document Title -->
-    <title class="brand-color">Forgot Password</title>
+    <title class="brand-color">Success</title>
 
     <!-- Favicons -->
-    <link href="../pages/assets/img/logo-worksmart.png" rel="icon" />
-    <link href="../pages/assets/img/logo-worksmart.png" rel="apple-touch-icon" />
+    <link href="pages/assets/img/logo-worksmart.png" rel="icon" />
+    <link href="pages/assets/img/logo-worksmart.png" rel="apple-touch-icon" />
 
     <!-- External CSS Links -->
     <link
@@ -21,7 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <link href="pagesassets/css/brand.css" rel="stylesheet" />
+    <link href="pages/assets/css/brand.css" rel="stylesheet" />
 
     <!-- Custom Styles -->
     <style>
@@ -84,39 +85,6 @@
     <div class="container rounded-4">
       <!-- Row start -->
       <div class="row">
-        <!-- Bagian Form -->
-        <div class="col-md-6">
-          <h2 class="brand-color">Forgot Password</h2>
-          <form method="POST" action="forgot_password_process.php">
-            <!-- Error message section (if exists) -->
-            <div class="alert alert-danger" style="display: none;" id="error-message">
-              <!-- Error message will be injected here -->
-            </div><br>
-
-            <!-- Email Input -->
-            <label for="email" class="form-label brand-color">Email</label>
-            <input
-              class="form-control"
-              id="email"
-              name="email"
-              type="email"
-              required
-            /> <br>
-
-            <!-- Form Submission Section -->
-            <div class="d-grid">
-              <button type="submit" class="btn btn-outline-primary btn-lg rounded-pill" name="reset">Reset</button>
-            </div>
-          </form>
-        </div> 
-        <!-- Bagian Image -->
-        <div class="col-md-6">
-          <div class="d-flex align-items-center justify-content-center h-100">
-            <img src="../pages/assets/img/logo-worksmart.png" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-      <!-- Row End -->
-    </div>
-  </body>
-</html>
+                <div class="m-3 p-3 bg-light bg-gradient text-center rounded-3">Password is sucessfully change, login <a href="../pages/index.php">here</a></div>
+            </body>
+            </html>

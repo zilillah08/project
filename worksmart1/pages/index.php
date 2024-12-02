@@ -108,7 +108,7 @@ checkAuthorized();
                   <label for="password" class="form-label brand-color">Password</label>
                   <div class="input-group">
                     <input type="password" class="form-control password-input p-3" id="password" name="password" placeholder="Password" required>
-                    <button type="button" id="togglePassword" class="btn btn-outline-secondary password-toggle">Show</button>
+                    <button type="button" id="togglePassword" class="btn btn-outline-secondary password-toggle">Hide</button>
                   </div>
                 </div>
 
@@ -136,7 +136,7 @@ checkAuthorized();
                     <button type="submit" name="login" class="btn btn-primary rounded-pill btn-lg w-100">Log in</button>
                   </div>
                   <div class="col-md-6 d-flex align-items-center justify-content-end">
-                    <a href="forgot_password.php" class="link-primary">Lupa Sandi</a>
+                    <a href="forgot_password.php" class="link-primary">Lupa Password</a>
                   </div>
                 </div>
 
@@ -153,7 +153,7 @@ checkAuthorized();
                 </div>                
                 
                 <div class="text-muted text-center">
-                Bukan anggota? Dapatkan akses eksklusif ke pameran dan banyak lagi. <a href=" " class="link-primary">Gabung Sekarang</a>.
+                Bukan anggota? Dapatkan akses eksklusif ke pameran dan banyak lagi. <a href="../pages/register.php" class="link-primary">Gabung Sekarang</a>.
                 </div>
               </form>            
             </div>
