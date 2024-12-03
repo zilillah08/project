@@ -79,9 +79,9 @@ ini_set('display_errors', 1);
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href=" " class="active">Beranda</a></li>
-          <li><a href=" ">Tentang</a></li>
-          <li><a href=" ">Workshop</a></li>
+          <li><a href="#hero" class="active">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#workshops">Workshop</a></li>
           <?php if($isLogin) { $role = $_SESSION['role']; ?>
           <li class="dropdown"><a href=" "><span>Akun</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -861,9 +861,9 @@ ini_set('display_errors', 1);
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Tautan Cepat</h4>
           <ul>
-            <li><a href="">Beranda</a></li>
-            <li><a href="">Tentang Kami</a></li>
-            <li><a href="">Workshop</a></li>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#workshops">Workshop</a></li>
           </ul>
         </div>
 

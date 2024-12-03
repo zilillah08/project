@@ -24,6 +24,8 @@ checkAuthorized();
       rel="stylesheet"
     />
     <link href="assets/css/brand.css" rel="stylesheet" />
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom Styles -->
     <style>
@@ -95,6 +97,18 @@ checkAuthorized();
       .input-group .form-control {
         border-radius: 0 8px 8px 0;
       }
+      .password-toggle {
+        border-radius: 0 8px 8px 0;
+        height: 100%;
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        background: #f8f9fa;
+        border: 1px solid #ced4da;
+        cursor: pointer;
+    }
     </style>
     <script>
     document.querySelector('form').addEventListener('submit', function(event) {
@@ -107,7 +121,18 @@ checkAuthorized();
       }
     });
 </script>
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+      const togglePassword = document.querySelector('#togglePassword');
+      const passwordField = document.querySelector('#password');
+      
+      togglePassword.addEventListener('click', function() {
+        const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordField.setAttribute('type', type);
+        this.textContent = type === 'password' ? 'Show' : 'Hide';
+      });
+    });
+</script>
   </head>
   <body>
     <div id="loading-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); z-index: 9999;">
@@ -188,17 +213,13 @@ checkAuthorized();
             />
 
             <!-- Password Section -->
-            <label for="password" class="form-label brand-color"
-              >Password</label
-            >
-            <input
-              class="form-control"
-              id="password"
-              name="password"
-              type="password"
-              required  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
-              title="Password harus mengandung setidaknya 8 karakter yang terdiri dari huruf dan angka"
-            />
+            <div class="mb-3">
+                  <label for="password" class="form-label brand-color">Password</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control password-input" id="password" name="password"  required>
+                    <button class="btn btn-outline-secondary password-toggle" id="togglePassword" type="button">Hide</button>
+                  </div>
+                </div>
             <small class="brand-color">
               Gunakan 8 karakter yang  terdiri dari huruf dan angka
             </small>

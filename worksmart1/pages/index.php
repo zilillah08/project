@@ -107,7 +107,7 @@ checkAuthorized();
                 <div class="mb-3">
                   <label for="password" class="form-label brand-color">Password</label>
                   <div class="input-group">
-                    <input type="password" class="form-control password-input p-3" id="password" name="password" placeholder="Password" required>
+                    <input type="password" class="form-control password-input p-3" id="password" name="password" required>
                     <button type="button" id="togglePassword" class="btn btn-outline-secondary password-toggle">Hide</button>
                   </div>
                 </div>
