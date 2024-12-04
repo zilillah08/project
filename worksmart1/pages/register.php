@@ -88,15 +88,6 @@ checkAuthorized();
       .logo img {
         max-width: 100px;
       }
-
-      /* Input Group Styles */
-      .input-group .input-group-text {
-        border-radius: 8px 0 0 8px;
-        padding: 12px 15px;
-      }
-      .input-group .form-control {
-        border-radius: 0 8px 8px 0;
-      }
       .password-toggle {
         border-radius: 0 8px 8px 0;
         height: 100%;
