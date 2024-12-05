@@ -49,11 +49,11 @@ $payments = getPaymentData($_SESSION['user_id']);
   <main id="main" class="main brand-bg-color">
 
     <div class="pagetitle">
-      <h1 class="text-light">Data Pembayaran Saya</h1>
+      <h1 class="text-light">Aktivitas </h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
-          <li class="breadcrumb-item active">Data Pembayaran Saya</li>
+          <li class="breadcrumb-item active">Aktivitas Saya</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -78,47 +78,45 @@ $payments = getPaymentData($_SESSION['user_id']);
         <div class="col-lg-12">
           <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Data Pembayaran Saya</h5>
-                <p class="text-dark">Berikut adalah daftar pembayaran saya.</p>
+                <h5 class="card-title">Akktivitas Saya</h5>
+                <p class="text-dark">Berikut adalah riwayat saya.</p>
                 <a href="dashboard.php"  class="brand-btn btn mt-2 mb-4 rounded-pill"><i class="bi bi-cart-plus me-2"></i>Pesan Workshop Lagi</a>
                 <a href="#" onclick="location.reload();" class="brand-btn btn mt-2 mb-4 rounded-pill"><i class="bi bi-arrow-clockwise me-2"></i>Refresh</a>              
               
                   <!-- Fetch Data Pembayaran Saya dari db -->
-                    <div class="table-responsive">
-                      <table class="table table-striped table-hover dt-responsive nowrap" id="participantTable" style="width:100%">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover dt-responsive nowrap" id="participantTable" style="width:100%">
                       <thead>
-                          <tr>
+                        <tr>
                           <th>ID</th>
                           <th>Workshop</th>
                           <th>Mitra</th>
                           <th>Status</th>
                           <th>Tanggal</th>
                           <th>Aksi</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <?php
-                          $payments = getPaymentData($_SESSION['user_id']);
-                          foreach($payments as $payment) {
-                          ?>
-                          <tr>
-                              <td><?= $payment['payment_id'] ?></td>
-                              <td><?= $payment['workshop_title'] ?></td>
-                              <td><?= $payment['mitra_name'] ?></td>
-                              <td>Rp <?= number_format($payment['amount'], 0, ',', '.') ?></td>
-                              <td><?= ucfirst(str_replace('_', ' ', $payment['payment_method'])) ?></td>
-                              <td>
-                              <span class="badge <?= $payment['payment_status'] == 'successful' ? 'bg-success' : 'bg-danger' ?>">
-                                  <?= ucfirst($payment['payment_status']) ?>
-                              </span>
-                              </td>
-                              <td><?= date('d/m/Y H:i', strtotime($payment['payment_date'])) ?></td>
-                              <td>
-                              <div class="btn-group" role="group">
-                                  <button type="button" class="btn btn-sm btn-outline-info me-1 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailModal<?= $payment['payment_id'] ?>" title="Detail"><i class="bi bi-eye"></i></button>
-                                  <?php if($payment['payment_status'] == 'successful'): ?>
-                                  <a href="print_nota.php?payment_id=<?= $payment['payment_id']; ?>" class="btn btn-sm btn-outline-success rounded-pill" title="Download Invoice"><i class="bi bi-download"></i></a>
-                                  <?php endif; ?>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                    $payments = getPaymentData($_SESSION['user_id']);
+                    foreach ($payments as $payment) {
+                    ?>
+                        <tr>
+                            <td><?= $payment['payment_id'] ?></td>
+                            <td><?= $payment['workshop_title'] ?></td>
+                            <td><?= $payment['mitra_name'] ?></td>
+                            <td>
+                                <span class="badge <?= $payment['payment_status'] == 'successful' ? 'bg-success' : 'bg-danger' ?>">
+                                    <?= $payment['payment_status'] == 'successful' ? 'Selesai' : 'Gagal' ?>
+                                </span>
+                            </td>
+                            <td><?= date('d/m/Y H:i', strtotime($payment['payment_date'])) ?></td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-sm btn-outline-info me-1 rounded-pill" data-bs-toggle="modal" data-bs-target="#detailModal<?= $payment['payment_id'] ?>" title="Detail"><i class="bi bi-eye"></i></button>
+                                    <?php if ($payment['payment_status'] == 'successful') : ?>
+                                        <a href="print_nota.php?payment_id=<?= $payment['payment_id']; ?>" class="btn btn-sm btn-outline-success rounded-pill" title="Download Invoice"><i class="bi bi-download"></i></a>
+                                    <?php endif; ?>
                               </div>
                               </td>
                           </tr>
