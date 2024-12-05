@@ -505,35 +505,36 @@ function initDashboardCharts() {
 
     // Admin/General participants chart
     const participantsChart = document.querySelector('#barChart_peserta');
-    if (participantsChart) {
-        new Chart(participantsChart, {
-            ...baseChartConfig,
-            data: {
-                labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
-                datasets: [{
-                    label: 'Peserta Terdaftar',
-                    data: <?= json_encode($monthlyParticipants ?? []); ?>,
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)', 'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 205, 86, 0.2)', 'rgba(75, 192, 192, 0.2)',
-                        'rgba(54, 162, 235, 0.2)', 'rgba(153, 102, 255, 0.2)',
-                        'rgba(201, 203, 207, 0.2)', 'rgba(100, 100, 100, 0.2)',
-                        'rgba(170, 128, 128, 0.2)', 'rgba(200, 130, 150, 0.2)',
-                        'rgba(130, 180, 160, 0.2)', 'rgba(150, 130, 200, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgb(255, 99, 132)', 'rgb(255, 159, 64)',
-                        'rgb(255, 205, 86)', 'rgb(75, 192, 192)',
-                        'rgb(54, 162, 235)', 'rgb(153, 102, 255)',
-                        'rgb(201, 203, 207)', 'rgb(100, 100, 100)',
-                        'rgb(170, 128, 128)', 'rgb(200, 130, 150)',
-                        'rgb(130, 180, 160)', 'rgb(150, 130, 200)'
-                    ],
-                    borderWidth: 1
-                }]
-            }
-        });
-    }
+if (participantsChart) {
+    new Chart(participantsChart, {
+        ...baseChartConfig,
+        data: {
+            labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+            datasets: [{
+                label: 'Peserta Terdaftar',
+                data: <?= json_encode($normalizedParticipants ?? []); ?>,
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)', 'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 205, 86, 0.2)', 'rgba(75, 192, 192, 0.2)',
+                    'rgba(54, 162, 235, 0.2)', 'rgba(153, 102, 255, 0.2)',
+                    'rgba(201, 203, 207, 0.2)', 'rgba(100, 100, 100, 0.2)',
+                    'rgba(170, 128, 128, 0.2)', 'rgba(200, 130, 150, 0.2)',
+                    'rgba(130, 180, 160, 0.2)', 'rgba(150, 130, 200, 0.2)'
+                ],
+                borderColor: [
+                    'rgb(255, 99, 132)', 'rgb(255, 159, 64)',
+                    'rgb(255, 205, 86)', 'rgb(75, 192, 192)',
+                    'rgb(54, 162, 235)', 'rgb(153, 102, 255)',
+                    'rgb(201, 203, 207)', 'rgb(100, 100, 100)',
+                    'rgb(170, 128, 128)', 'rgb(200, 130, 150)',
+                    'rgb(130, 180, 160)', 'rgb(150, 130, 200)'
+                ],
+                borderWidth: 1
+            }]
+        }
+    });
+}
+
 
     // Mitra participants chart
     const mitraChart = document.querySelector('#mitraParticipantsChart');
