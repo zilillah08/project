@@ -97,8 +97,8 @@ $workshops = getWorkshopByMitraId($_SESSION['user_id']);
               foreach($workshops as $workshop) {
               ?>
               <tr>
-                  <td><?= $workshop['title'] ?></td>
-                  <td><?= $workshop['description'] ?></td>
+                  <td><?= $workshop['judul'] ?></td>
+                  <td><?= $workshop['deskripsi'] ?></td>
                   <td><img src="assets/img/workshops/<?= $workshop['banner'] ?>" width="50"></td>
                   <td><?= $workshop['training_overview'] ?></td>
                   <td><?= $workshop['trained_competencies'] ?></td>
