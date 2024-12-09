@@ -112,7 +112,9 @@
         <!-- Bagian Image -->
         <div class="col-md-6">
           <div class="d-flex align-items-center justify-content-center h-100">
+            <a href="./index.php">
             <img src="../pages/assets/img/logo-worksmart.png" class="img-fluid" />
+            </a>
           </div>
         </div>
       </div>
